@@ -5,14 +5,20 @@ const E_CARD = 'e-card';
 const HOS = 'hos';
 
 let currentActiveCanvas = EINSTIEG;
+const homeIcon = document.getElementById('home-icon');
+const backIcon = document.getElementById('back-icon');
 
 function activateCanvas(id){
   const current = document.getElementById(currentActiveCanvas);
   const next = document.getElementById(id);
   current.className = current.className.replace('active', '');
   next.className = next.className + ' active';
-  currentActiveCanvas = id;
+
+  // pause videos
   document.querySelectorAll('video').forEach(element => element.pause());
+
+  // change current actvie canvas
+  currentActiveCanvas = id;
 }
 
 /** 

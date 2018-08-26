@@ -12,6 +12,21 @@ video {
   position: fixed;
 }
 
+.back-icon {
+  z-index: 2;
+  height: 36px;
+  width: 23px;
+  left: 42px;
+  top: 30px;
+}
+
+.home-icon {
+  z-index: 2;
+  height: 45px;
+  width: 45px;
+  right: 42px;
+  top: 30px;
+}
 /*
  canvas
 */
