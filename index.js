@@ -12,6 +12,7 @@ function activateCanvas(id){
   current.className = current.className.replace('active', '');
   next.className = next.className + ' active';
   currentActiveCanvas = id;
+  document.querySelectorAll('video').forEach(element => element.pause());
 }
 
 /** 
