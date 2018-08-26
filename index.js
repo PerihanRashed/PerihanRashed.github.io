@@ -24,7 +24,6 @@ function handleEinstiegIcon1Click () {
 
 function handleEinstiegIcon2Click () {
   activateCanvas(HOS);
-  document.querySelector("#hospital-video").play();
 }
 
 function handleEinstiegIcon3Click () {
@@ -50,9 +49,20 @@ document.querySelectorAll('[data-name="einstieg-icon-3"]').forEach(element => {
 
  function handleDocHosDocIcon() {
    activateCanvas(DOC);
-   document.querySelector("#doctor-video").play();
  }
 
  document.querySelectorAll('[data-name="doc-hos-doc-icon"]').forEach(element => {
   element.onclick = handleDocHosDocIcon;
+});
+
+/**
+ * doc
+ */
+
+ function handleDocCardIcon() {
+   activateCanvas(E_CARD);
+ }
+
+ document.querySelectorAll('[data-name="doc-card-icon"]').forEach(element => {
+  element.onclick = handleDocCardIcon;
 });
